@@ -45,7 +45,7 @@ CREATE TABLE Account (
 INSERT INTO Products (Id, Name, Image, ImageList, Price, Category, Discount, Star, Description)
 VALUES
 ('tra1',N'Camera WI-FI EZVIZ C6N 4MP','main.jpg', '1.jpg;2.jpg;3.jpg;4.jpg;5.jpg;6.jpg;7.jpg;8.jpg;9.jpg;10.jpg', 694900,'TP', 2, 1, N'Sản Phẩm số 1'),
-('tra2',N'Laptop ASUS Gaming', 'main.jpg', '1.jpg', 17990000,'TP', 16, 1, N'Sản phẩm số 2'),
+('GLXA15LTE',N'Điện Thoại Samsung Galaxy A15 LTE (8GB/128GB)- Đã Kích Hoạt Bảo Hành Điện tử - Hàng Chính Hãng', 'main.jpg', '1.jpg;2.jpg;3.jpg;4.jpg;5.jpg;6.jpg;7.jpg;8.jpg', 4990000,'DT', 21, 5, N'Điện thoại vip'),
 ('tra3',N'Laptop ASUS Gaming','main.jpg', '1.jpg', 17990000,'TP', 16, 1, N'Sản phẩm số 2');
 /*
 (N'Laptop ASUS Gaming1', '/images/product2.jpg', 17990000, 15, 2, N'Sản phẩm số 3'),
@@ -60,9 +60,11 @@ VALUES
 
 INSERT INTO Categories (Name, ImageUrl)
 VALUES
-(N'Nhà sách Tiki','/images/category1.png'),
-(N'Đồ Điện Tử','/images/category2.png'),
-(N'Đồ Gia Dụng','/images/category3.png');
+(N'Đồ Điện Tử','DT.jpg'),
+(N'Đồ Gia Dụng','GD.jpg'),
+(N'Mỹ Phẩm - Trang Sức','MP.jpg'),
+(N'Thực Phẩm','TP.jpg'),
+(N'Thời Trang','TT.jpg');
 
 INSERT INTO Services (Name, ImageUrl)
 VALUES
@@ -87,3 +89,5 @@ SELECT * FROM Account;
 
 DROP TABLE Account;
 DROP TABLE Products;
+
+DROP TABLE Categories;
